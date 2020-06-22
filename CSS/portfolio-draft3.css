@@ -1,0 +1,189 @@
+* {margin: 0px; padding: 0px;}
+
+html, body, #container {
+    scroll-behavior: smooth;
+}
+
+body, #container, header {
+    width: 100%;
+    background-color: black;
+    
+}
+
+hr {
+    opacity: 0.3;
+    border: 1px solid gold;
+    /* background-color: rgba(0, 0, 0, 0.3); */
+}
+
+#container {
+    margin: 0px auto;
+    /* background-color: greenyellow; */
+    /* border: 1px solid black; */
+}
+
+.fa {
+    color: gold;
+}
+
+header {
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    border-bottom: 1px solid gold;
+}
+
+header h1 {
+    /* background-color: mediumorchid; */
+    font-size: 32px;
+    margin: 14px;
+    text-transform: uppercase;
+}
+
+header a {
+    /* background-color: mediumorchid; */
+    color: white;
+    text-decoration: none;
+}
+
+#menu {
+    width: 120px;
+    height: 100%;
+    /* background-color: tomato; */
+    text-align: center;
+}
+
+nav {
+    width: 100%;
+    height: 30px;
+    /* margin: 15px 0px; */
+    margin-top: 30px;
+    /* background-color: mediumaquamarine; */
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+nav ul li {
+    height: 100%;
+    font-family: sans-serif;
+    font-size: 20px;
+}
+
+#subMenu {
+    background-color: orange;
+    display: none;
+    opacity: 0;
+}
+
+/* #subMenu ul {
+    margin-top: 15px;
+} */
+
+#subMenu ul a {
+    height: 30px;
+    /* color: blue; */
+    color: black;
+    text-decoration: none;
+    display: block;
+}
+
+#subMenu ul li:nth-child(odd) {
+    background-color: slategrey;
+}
+
+#subMenu ul li:nth-child(even) {
+    background-color: grey;
+}
+
+nav ul li:hover > #subMenu {
+    display: block;
+    opacity: 1;
+}
+
+.section {
+    /* width: 100%;
+    height: 100%; */
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+#intro {
+    width: 100%;
+    height: 100%;
+    /* background-color: pink; */
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: url("../Images/aethetic2.jpg");
+    background-size: cover;
+}
+
+#intro h1 {
+    font-size: 80px;
+    text-transform: uppercase;
+    font-weight: normal;
+}
+
+#education {
+    background-color: black;
+    color: white;
+    /* background: url("../Images/aethetic2.jpg"); */
+    background-size: cover;
+}
+
+#education img {
+    width: 259px;
+    height: 194px;
+    background-size: cover;
+    margin-left: 40px;
+}
+
+#school-section {
+    float: right;
+}
+
+#education a {
+    color: gold;
+}
+
+#school-section {
+    width: 100%;
+    /* display: flex; */
+}
+
+#projects {
+    background-color: black;
+    color: white;
+    /* background: url("../Images/aethetic2.jpg"); */
+    background-size: cover;
+}
+
+#projects2 {
+    background-color: black;
+    color: white;
+    /* background: url("../Images/aethetic2.jpg"); */
+    background-size: cover;
+}
+
+#contact {
+    background-color: black;
+    color: white;
+    /* background: url("../Images/aethetic2.jpg"); */
+    background-size: cover;
+}
+
+#social-section {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    display: flex;
+    justify-content: space-around;
+    font-size: 50px;
+}
