@@ -18,12 +18,14 @@ hr {
 
 #container {
     margin: 0px auto;
-    /* background-color: greenyellow; */
-    /* border: 1px solid black; */
 }
 
 .fa {
     color: gold;
+}
+
+.fa:hover {
+    color: silver;
 }
 
 header {
@@ -38,14 +40,12 @@ header {
 }
 
 header h1 {
-    /* background-color: mediumorchid; */
     font-size: 32px;
     margin: 14px;
     text-transform: uppercase;
 }
 
 header a {
-    /* background-color: mediumorchid; */
     color: white;
     text-decoration: none;
 }
@@ -53,7 +53,6 @@ header a {
 #menu {
     width: 120px;
     height: 100%;
-    /* background-color: tomato; */
     text-align: center;
 }
 
@@ -62,10 +61,9 @@ nav {
     height: 30px;
     /* margin: 15px 0px; */
     margin-top: 30px;
-    /* background-color: mediumaquamarine; */
 }
 
-nav ul {
+ul {
     list-style-type: none;
 }
 
@@ -76,9 +74,7 @@ nav ul li {
 }
 
 #subMenu {
-    background-color: orange;
     display: none;
-    opacity: 0;
 }
 
 /* #subMenu ul {
@@ -87,7 +83,6 @@ nav ul li {
 
 #subMenu ul a {
     height: 30px;
-    /* color: blue; */
     color: black;
     text-decoration: none;
     display: block;
@@ -103,19 +98,36 @@ nav ul li {
 
 nav ul li:hover > #subMenu {
     display: block;
-    opacity: 1;
 }
 
-.section {
-    /* width: 100%;
-    height: 100%; */
-    padding: 60px 30px;
+#education h3, #projects h3, #projects2 h3, #contact h3 {
+    padding-top: 60px;
+    color: gold;
+}
+
+#skills, #skills2, #btnPjc {
+    margin-bottom: 60px;
+}
+
+.some {
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+#work-section {
+    /* width: 50%; */
+    text-align: center;
+    margin: 0px auto 60px;
+}
+
+#about-content p, .school p, #work-section p, .list-height p, .list2-height p {
+    /* width: 50%; */
+    text-align: justify;
 }
 
 #intro {
     width: 100%;
     height: 100%;
-    /* background-color: pink; */
     color: white;
     display: flex;
     flex-direction: column;
@@ -126,22 +138,17 @@ nav ul li:hover > #subMenu {
 }
 
 #intro h1 {
-    font-size: 80px;
-    text-transform: uppercase;
     font-weight: normal;
+    text-transform: uppercase;
 }
 
 #education {
     background-color: black;
     color: white;
-    /* background: url("../Images/aethetic2.jpg"); */
-    background-size: cover;
 }
 
 #profile-pic {
-    width: 300px;
-    background-size: cover;
-    margin-left: 40px;
+    width: 250px;
 }
 
 .p-p {
@@ -149,7 +156,7 @@ nav ul li:hover > #subMenu {
 }
 
 #education a {
-    color: gold;
+    color: silver;
 }
 
 #school-section {
@@ -157,16 +164,18 @@ nav ul li:hover > #subMenu {
     /* display: flex; */
 }
 
+.school {
+    border: 1px solid white;
+    padding: 5px 5px;
+}
+
+.school img {
+    width: 250px;
+}
+
 #projects {
     background-color: black;
     color: white;
-    /* background: url("../Images/aethetic2.jpg"); */
-    background-size: cover;
-}
-
-#project-section {
-    display: grid;
-    grid-template-columns: auto auto auto auto;
 }
 
 .project-list {
@@ -175,45 +184,34 @@ nav ul li:hover > #subMenu {
 }
 
 .list-height {
-    height: 250px;
+    height: auto;
 }
 
 .project-list img {
     width: 100%;
-    background-size: cover;
 }
 
 #projects2 {
     background-color: black;
     color: white;
-    /* background: url("../Images/aethetic2.jpg"); */
-    background-size: cover;
-}
-
-#project2-section {
-    display: grid;
-    grid-template-columns: auto auto auto auto auto;
 }
 
 .project2-list {
     border: 1px solid white;
-    padding: 10px 10px
+    padding: 10px 10px;
 }
 
 .list2-height {
-    height: 300px;
+    height: auto;
 }
 
 .project2-list img {
     width: 100%;
-    background-size: cover;
 }
 
 #contact {
     background-color: black;
     color: white;
-    /* background: url("../Images/aethetic2.jpg"); */
-    background-size: cover;
 }
 
 #social-section {
@@ -221,11 +219,6 @@ nav ul li:hover > #subMenu {
     padding-bottom: 60px;
     display: flex;
     justify-content: space-around;
-    font-size: 50px;
-}
-
-.social-list:hover {
-    font-size: 55px;
 }
 
 @keyframes fadeInBox {
@@ -245,5 +238,80 @@ nav ul li:hover > #subMenu {
 
     100% {
         opacity: 0;
+    }
+}
+
+@media (min-width: 600px) {
+    #intro h1 {
+        font-size: 50px;
+        font-weight: bold;
+    }
+
+    #profile-pic {
+        float: left;
+        margin-right: 10px;
+    }
+
+    #school-section {
+        display: grid;
+        grid-template-columns: auto auto;
+    }
+
+    #work-section h4 {
+        text-align: justify;
+    }
+
+    #project-section {
+        display: grid;
+        grid-template-columns: auto auto auto auto;
+    }
+
+    #project2-section {
+        display: grid;
+        grid-template-columns: auto auto auto;
+    }
+
+    .list-height h4 {
+        height: 80px;
+    }
+
+    .list2-height h4 {
+        height: 60px;
+    }
+
+    #skills ul {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 10px;
+    }
+
+    #skills2 ul {
+        display: grid;
+        grid-template-columns: auto auto auto auto;
+        margin-top: 10px;
+    }
+
+    .social-list {
+        font-size: 30px;
+        transition: all 0.5s;
+    }
+    
+    .social-list:hover {
+        font-size: 40px;
+        transition: all 0.5s;
+    }
+}
+
+@media (max-width:599px) {
+    .section {
+        text-align: center;
+    }
+
+    #profile-pic {
+        margin-bottom: 20px;
+    }
+
+    #skills, #skills2 {
+        margin-top: 10px;
     }
 }
